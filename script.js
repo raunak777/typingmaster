@@ -19,17 +19,23 @@ var arr=[
     "The only way to do great work is to love what you do.",
     "The peacock is the national bird of India. They have colourful feathers, two legs and a small beak.They are famous for their dance."
     , "Ants are found everywhere in the world. They make their home in buildings, gardens etc. They live in anthills. Ants are very hardworking insects.",
-    ,"The camels are called the “ships of the desert”. They are used to carry people and loads from one place to another. They have a huge hump on their body where they! Store their fat."
-    ,"An elephant is the biggest living animal on land. It is quite huge in size. It is usually black or grey in colour.","Horses are farm animals. They are usually black, grey, white and brown in colour. They are known as beasts of burden.",
+    ,"The camels are called the 'ships of the desert'. They are used to carry people and loads from one place to another. They have a huge hump on their body where they! Store their fat."
+    ,"An elephant is the biggest living animal on land. It is quite huge in size. It is usually black or grey in colour.",
+    "Horses are farm animals. They are usually black, grey, white and brown in colour. They are known as beasts of burden.",
     "The Dog is a pet animal. It is one of the most obedient animals. There are many kinds of dogs in the world. Some of the are very friendly while some of them a dangerous.",
     "The stars are tiny points of light in the space. On a clear night we can see around 2,000 to 3,000 stars without using a telescope."
   ];
 
+//Getting randome paragraph
+
   function randomGen()
   {
     var i=[Math.floor(Math.random() * arr.length)];
+    console.log(i);
     originText.innerHTML=arr[i];
     word=arr[i].length;
+    console.log(word);
+
   }
 
 // Add leading zero to numbers 9 or below (purely for aesthetics):
@@ -61,7 +67,7 @@ var arr=[
         if(textcheck == originText.innerHTML)
         {
             testWrapper.style.borderColor="#09F30D";
-            var timerCal=((word/5)/(timer[0] + timer[1]/60 + ((timer[2]/1000)/60)));
+            var timerCal=((word/5)/(timer[0] + (timer[1]/60) + ((timer[2]/1000)/60)));
             console.log(timerCal);
             wpm.innerHTML="Your typing speed is " + Math.floor(timerCal)+ " wpm";
             clearInterval(interval);
@@ -99,6 +105,7 @@ function allreset()
     testArea.value='';
     theTimer.innerHTML= "00:00:00";
     testWrapper.style.borderColor="grey";
+    wpm.innerHTML='';
     randomGen();
 }
 
