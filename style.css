@@ -154,6 +154,17 @@ body {
     margin: 0;
     padding-bottom: 1em;
 }
+#origin-text1 {
+    
+    margin: 1em 0;
+    padding: 1em 1em 0;
+    background-color: #ededed;
+}
+
+#origin-text1 p {
+    margin: 0;
+    padding-bottom: 1em;
+}
 
 .test-wrapper {
     display: flex;
