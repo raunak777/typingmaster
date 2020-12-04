@@ -17,10 +17,10 @@ var arr=[
     "It's going to be hard, but hard does not mean impossible.", 
     "Learning never exhausts the mind.", 
     "The only way to do great work is to love what you do.",
-    "The peacock is the national bird of India. They have colourful feathers, two legs and a small beak.They are famous for their dance."
-    , "Ants are found everywhere in the world. They make their home in buildings, gardens etc. They live in anthills. Ants are very hardworking insects.",
-    ,"The camels are called the 'ships of the desert'. They are used to carry people and loads from one place to another. They have a huge hump on their body where they! Store their fat."
-    ,"An elephant is the biggest living animal on land. It is quite huge in size. It is usually black or grey in colour.",
+    "The peacock is the national bird of India. They have colourful feathers, two legs and a small beak.They are famous for their dance.",
+     "Ants are found everywhere in the world. They make their home in buildings, gardens etc. They live in anthills. Ants are very hardworking insects.",
+     "The camels are called the 'ships of the desert'. They are used to carry people and loads from one place to another. They have a huge hump on their body where they! Store their fat.",
+     "An elephant is the biggest living animal on land. It is quite huge in size. It is usually black or grey in colour.",
     "Horses are farm animals. They are usually black, grey, white and brown in colour. They are known as beasts of burden.",
     "The Dog is a pet animal. It is one of the most obedient animals. There are many kinds of dogs in the world. Some of the are very friendly while some of them a dangerous.",
     "The stars are tiny points of light in the space. On a clear night we can see around 2,000 to 3,000 stars without using a telescope."
@@ -30,11 +30,10 @@ var arr=[
 
   function randomGen()
   {
-    var i=[Math.floor(Math.random() * arr.length)];
+    var i=parseInt((Math.random())*(arr.length));
     console.log(i);
     originText.innerHTML=arr[i];
     word=arr[i].length;
-    console.log(word);
 
   }
 
